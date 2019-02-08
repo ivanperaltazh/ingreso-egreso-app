@@ -4,7 +4,7 @@ export class User {
   public uid: string;
 
   constructor(obj: DataObj) {
-    this.nombre = obj && obj.nombre || null;  // si existe el obj tomo el obj.nombre o sino pone null
+    this.nombre = obj && obj.nombre || null;  // si existe el objeto tomo el obj.nombre o sino pone null
     this.email =  obj && obj.email || null;
     this.uid =    obj && obj.uid || null;
   }

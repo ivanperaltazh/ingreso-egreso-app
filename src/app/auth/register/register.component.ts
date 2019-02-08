@@ -12,7 +12,7 @@ import { Subscription } from 'rxjs';
 export class RegisterComponent implements OnInit, OnDestroy {
 
    cargando: boolean;
-   subscription: Subscription;  // Esto nos permitira llamar el nSubscribe() cuanod se destruya este componente
+   subscription: Subscription = new Subscription();  // Esto nos permitira llamar el nSubscribe() cuanod se destruya este componente
 
   constructor( public authService: AuthService,
                public store: Store <AppState>) { }
